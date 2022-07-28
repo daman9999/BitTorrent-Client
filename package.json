@@ -1,0 +1,30 @@
+{
+  "name": "bitorrent-client",
+  "version": "1.0.0",
+  "description": "this is a Bitorrent client in which you can decode the bencode and download the bittorrent files directly to your machine using node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daman9999/BitTorrent-Client.git"
+  },
+  "keywords": [
+    "client",
+    "torrent",
+    "bittorrent",
+    "bencode",
+    "peer-to-peer",
+    "nodejs"
+  ],
+  "author": "Daman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daman9999/BitTorrent-Client/issues"
+  },
+  "homepage": "https://github.com/daman9999/BitTorrent-Client#readme",
+  "dependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
