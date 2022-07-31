@@ -31,6 +31,15 @@ install bencode in npm because because the torrent is encoded in bencode and to 
 
 bencode is a code just like JSON but with the additional properties like [peices property] you can see these by console.warn(torrent);
 
+the info if tracker has been in announce section, you will clearly observe all the bytes are in buffer so,first let's find the address of tracker by:
 
+console.warn(torrent.announce.toString('utf-8'));
+
+you will clearly see the address is in "udp:/" instead of "http:// or https:/" that is because the modern torrent uses the udp protocol to send the data to your computer
+
+The main reason that most trackers now use udp is that udp has better performance than http.
+
+
+The main difference is that http guarantees that when a user sends data, the other user will recieve that data in its entirety, uncorrupted, and in the correct order – but it must create a persistent connection between users before sending data and this can make http much slower than udp.
 
 
