@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/daman9999/BitTorrent-Client#readme",
   "dependencies": {
+    "bencode": "^2.0.3",
     "nodemon": "^2.0.19"
   }
 }

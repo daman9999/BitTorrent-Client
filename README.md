@@ -20,8 +20,16 @@ In binary represented as : 00001010
 In Hexadecimal: 0A
 
 so to store  Decimal info like 2,4,6,10,16 in buffer it will be equivalent hexadecimal of These numbers.It is represented as
-<Buffer 02 , 04 , 06 , 0a , 0f>
+<Buffer 02 , 04 , 06 , 0a , 0f> 
 
+
+
+|  Another day work
+---------------------------------------------------------------
+
+install bencode in npm because because the torrent is encoded in bencode and to decode we have to use bencode library.
+
+bencode is a code just like JSON but with the additional properties like [peices property] you can see these by console.warn(torrent);
 
 
 
