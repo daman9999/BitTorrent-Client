@@ -43,3 +43,12 @@ The main reason that most trackers now use udp is that udp has better performanc
 The main difference is that http guarantees that when a user sends data, the other user will recieve that data in its entirety, uncorrupted, and in the correct order – but it must create a persistent connection between users before sending data and this can make http much slower than udp.
 
 
+|  Working on creating sockets and sending the data
+---------------------------------------------------------------
+dgram.createSocket('udp4') => create the socket[ socket is and object where the communication happens] and intitalize it to do communication.Here udp4 is used which means we have to use address like (127.0.0.1), you can also use ipv6 address which is looks like :
+DE40:C500:00A0:0BBB:1F5F:0000:21EE:7DAC
+to use ipv6 we have to use 'upd6' instead of udp4;
+
+
+
+Buffer From => used to create a buffer we put array usually in this but if want to use string you have to mention the format;
