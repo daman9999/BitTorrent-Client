@@ -52,3 +52,17 @@ to use ipv6 we have to use 'upd6' instead of udp4;
 
 
 Buffer From => used to create a buffer we put array usually in this but if want to use string you have to mention the format;
+
+
+
+| UDP tracker protocol and message format
+---------------------------------------------------------------
+1. Send a connect request
+2. Get the connect response and extract the connection id
+3. Use the connection id to send an announce request - this is where we 
+    tell the tracker which files we’re interested in
+4. Get the announce response and extract the peers list
+
+make tracker.js file
+
+
